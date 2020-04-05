@@ -1,0 +1,7 @@
+# files with next extension would be hided 
+*.db
+*.log
+
+# dirictories with next names would be hided (select 'target' if needed)
+/bin
+/.idea
