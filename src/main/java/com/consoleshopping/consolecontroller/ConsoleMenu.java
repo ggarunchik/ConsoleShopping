@@ -64,6 +64,7 @@ public class ConsoleMenu extends AMenu implements MenuActions {
     public void displayCartItems() {
         System.out.println("Your current cart items: ");
         userCart.showCartItems();
+        userCart.calcTotalCartPrice();
     }
 
     public void menu () {

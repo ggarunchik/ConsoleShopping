@@ -13,4 +13,6 @@ public interface Cartable {
     void removeItemByID(int pID);
 
     void showCartItems();
+
+    void calcTotalCartPrice();
 }

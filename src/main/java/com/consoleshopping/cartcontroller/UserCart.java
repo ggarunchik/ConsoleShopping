@@ -34,7 +34,6 @@ public class UserCart extends ACart implements Cartable {
 
     @Override
     public void removeItemByID(int pID) {
-
         AItem item = getItemByProductID(pID);
         cartItems.remove(item);
     }
@@ -47,5 +46,14 @@ public class UserCart extends ACart implements Cartable {
             }
             System.out.println(aItem);
         }
+    }
+
+    @Override
+    public void calcTotalCartPrice() {
+        double totalPrice = 0;
+        for (AItem aItem : cartItems) {
+                totalPrice  += aItem.getPriceRetail();
+        }
+        System.out.println("Total cart price is: " + totalPrice);
     }
 }
